@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">记分器</string>
+    <string name="one_point">得分</string>
+    <string name="foul">犯规</string>
+    <string name="reset">重置</string>
+    <string name="team_a">甲队</string>
+    <string name="team_b">乙队</string>
+    <string name="teama_foul">甲队犯规</string>
+    <string name="teama_win">甲队得分</string>
+    <string name="teamb_foul">乙队犯规</string>
+    <string name="teamb_win">乙队得分</string>
+</resources>

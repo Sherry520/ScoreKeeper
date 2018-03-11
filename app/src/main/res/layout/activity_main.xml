@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.scorekeeper.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="@string/team_a" />
+
+            <TextView
+                android:id="@+id/score_a_team"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="@string/zero"
+                android:textSize="@dimen/text_size_title" />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:layout_marginTop="16dp"
+                android:onClick="addPointForTeamA"
+                android:text="@string/one_point" />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:layout_marginTop="8dp"
+                android:onClick="foulA"
+                android:text="@string/foul" />
+
+            <TextView
+                android:id="@+id/message_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="@string/team_b" />
+
+            <TextView
+                android:id="@+id/score_b_team"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="@string/zero"
+                android:textSize="@dimen/text_size_title" />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:layout_marginTop="16dp"
+                android:onClick="addPointForTeamB"
+                android:text="@string/one_point" />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:layout_marginTop="8dp"
+                android:onClick="foulB"
+                android:text="@string/foul" />
+
+            <TextView
+                android:id="@+id/message_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:onClick="clearAllMessage"
+        android:text="@string/reset" />
+</RelativeLayout>
